@@ -110,6 +110,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201502231639051_CriacaoCategoria.cs" />
+    <Compile Include="Migrations\201502231639051_CriacaoCategoria.Designer.cs">
+      <DependentUpon>201502231639051_CriacaoCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\DBaseContext.cs" />
+    <Compile Include="Models\Entidades\Campo.cs" />
+    <Compile Include="Models\Entidades\Categoria.cs" />
+    <Compile Include="Models\Entidades\ListaCampo.cs" />
+    <Compile Include="Models\Entidades\SubCategoria.cs" />
+    <Compile Include="Models\Entidades\TipoCampo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -125,7 +136,13 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+    <Folder Include="Models\Constraints\" />
+    <Folder Include="Models\DAO\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201502231639051_CriacaoCategoria.resx">
+      <DependentUpon>201502231639051_CriacaoCategoria.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

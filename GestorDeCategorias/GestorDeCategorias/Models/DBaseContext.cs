@@ -9,6 +9,6 @@ namespace GestorDeCategorias.Models
 {
     public class DBaseContext:DbContext
     {
-        DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
     }
 }
